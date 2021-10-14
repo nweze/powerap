@@ -237,8 +237,9 @@ def sendorder(request):
     if request.method == 'POST':
         api_key = 'sk_test_f0a5a8b92ea759bd42326fce0253c74bf3fc8ac9'
         curl = 'https://api.paystack.co/transaction/initialize'
-        cburl = 'http://127.0.0.1:8000/completed'
-        cburl = 'http://3.140.1.114'
+        # cburl = 'http://127.0.0.1:8000/completed'
+        cburl = 'http://3.140.1.114/completed'
+        
 
         price = float(request.POST['price']) * 100
         bag_num = request.POST['bag']
