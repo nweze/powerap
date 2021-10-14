@@ -6,3 +6,6 @@ local_settings.py
 db.sqlite3
 db.sqlite3-journal
 venv
+git branch -M main
+git remote add origin https://github.com/nweze/powerap.git
+git push -u origin main
